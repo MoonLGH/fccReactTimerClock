@@ -1,0 +1,27 @@
+name: Publish Website
+
+on:
+  push:
+    branches: # triggers on any push to master
+    - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set Node.js 14
+      uses: actions/setup-node@v2.4.1
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm i
+    - name: Build
+      run: npm run build:prod
+    - name: Deploy
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: gh-upload
+        FOLDER: build
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
