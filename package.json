@@ -1,7 +1,7 @@
 {
-  "name": "fcc-random-quote",
+  "name": "fcc-timer",
   "version": "0.1.1",
-  "homepage": "fccDrumMachine",
+  "homepage": "fccReactTimerClock",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
