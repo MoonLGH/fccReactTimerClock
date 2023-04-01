@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/fccReactTimerClock/static/css/main.ed831961.css",
+    "main.js": "/fccReactTimerClock/static/js/main.33be4ffd.js",
+    "static/media/beep.mp3": "/fccReactTimerClock/static/media/beep.faf5d12a1a4a7ffacf09.mp3",
+    "index.html": "/fccReactTimerClock/index.html",
+    "main.ed831961.css.map": "/fccReactTimerClock/static/css/main.ed831961.css.map",
+    "main.33be4ffd.js.map": "/fccReactTimerClock/static/js/main.33be4ffd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed831961.css",
+    "static/js/main.33be4ffd.js"
+  ]
+}
